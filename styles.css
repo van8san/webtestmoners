@@ -509,8 +509,10 @@ nav .fa {
     flex-basis: 31%;
     text-align: center;
     background: #f7f7f7;
-    background-image: url(./imagess/gplay.png);
-    background-size: cover;
+    background-image: url(./imagess/pattern.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .whychoose-box {
@@ -781,8 +783,10 @@ nav .fa {
     background: #f7f7f7;
     padding-bottom: 5rem;
     justify-content: space-around;
-    background-image: url(./imagess/gplay.png);
-    background-size: cover;
+    background-image: url(./imagess/pattern.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .pe-box {
@@ -1007,8 +1011,10 @@ nav .fa {
     padding-bottom: 4rem;
     height: auto;
     background: #f7f7f7;
-    background-image: url(./imagess/gplay.png);
+    background-image: url(./imagess/pattern.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
     text-align: center;
 }
 
