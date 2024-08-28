@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Moners Creative</title>
+    <link rel="icon" href="/imagess/logo3.PNG">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="header3">
+        <nav class="nav-active">
+            <a href="/id/"><img src="/imagess/logo1.PNG"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="/services_id/">Layanan</a>
+                    <li>
+                         <a href="/projectexperiences_id/">Pengalaman Proyek</a>
+                    </li>
+                    <li>
+                    <a href="/aboutus_id/">Tentang Kami</a>
+                    <li><a href="/contactus_id/">Hubungi Kami</a></li>
+                    <li><div class="dropdown">
+                        <button onclick="myFunction2()" class="dropbtn">ID <i class="fa-solid fa-chevron-down"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="/contactus/">EN</a>
+                        </div>
+                      </div></li>
+                </ul>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="headii">
+        <div class="headercapt">
+            <h1>Hubungi <br>Kami</h1>
+        </div>
+        <div class="headimg"></div>
+        </div>
+    </section>
+    
+<!-- contact us form -->
+<div class="contactus">
+    <div class="contactus-row">
+        <div class="why-col">
+            <img src="/imagess/Call Us.PNG" class="contactus-img">
+            <h2>Telepon</h2>
+            <br>
+            <a href="tel:0217435640">021 743 5640</a>
+        </div>
+        <div class="why-col">
+            <img src="/imagess/Ask a Question.JPG" class="contactus-img">
+            <h2>Email</h2>
+            <p>Email akan kami balas dalam 24 jam</p>
+            <a href="mailto:info@monerscreative.com">Hubungi Kami</a>
+        </div>
+        <div class="why-col">
+            <img src="/imagess/Chat Live.PNG" class="contactus-img2">
+            <h2>Whatsapp</h2>
+            <p>Anda dapat menghubungi kami dari Senin 09:00 - Jumat 17:00</p>
+            <a href="https://wa.me/6281316302678">Hubungi Kami</a>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<div class="footer">
+        <div class="footer__desc">
+            <img src="/imagess/logo2.PNG" class="footer__img">
+            <p>Moners Creative menyediakan welding chamber habitat modern 
+                yang dirancang untuk mengatasi permasalahan 
+                keselamatan kerja di industri minyak dan gas lepas pantai.
+            </p>
+        </div>
+    <div class="footer__wrapper">
+        <div class="footer__links">
+            <h2 class="footer__title">Detail Kontak</h2>
+            <p class="footer__link">Jl. Merapi Kav. 810 Serua Ciputat - Tangerang selatan, Banten 15414</p>
+            <p class="footer__link"> +6221 743 5640 <br> +62813 1630 2678</p>
+            <p class="footer__link">info@monerscreative.com</p>
+        </div>
+        <div class="footer__links">
+            <h2 class="footer__title"><br></h2>
+            <a href="/index_id/" class="footer__link">Home</a>
+            <a href="/services_id/" class="footer__link">Layanan</a>
+            <a href="/projectexperiences_id/" class="footer__link">Pengalaman Proyek</a>
+        </div>
+        <div class="footer__links">
+            <h2 class="footer__title"><br></h2>
+            <a href="/aboutus_id/" class="footer__link">Tentang Kami</a>
+            <a href="/contactus_id/" class="footer__link">Hubungi Kami</a>
+        </div>
+    </div>
+  </div>
+<!---------------JavaScript for Toggle Menu--------------->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script>
+    (function(){
+      emailjs.init({
+        publicKey: "wmrYSCmOy24F_9VR-",
+      });
+   })();
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+    }
+
+     /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction2() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+</body>
+</html>
