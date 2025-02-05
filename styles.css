@@ -592,7 +592,7 @@ nav .fa {
     grid-template-columns: repeat(2, 1fr);
     color: #fff;
     background: var(--blue);
-    height: 200px;
+    height: 210px;
 }
 
 .footer__desc {
